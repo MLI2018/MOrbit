@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -7,20 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+<link rel="icon" type="image/x-icon" sizes="16x16" href="img/Favicon.ico">
+    <title>MOrbit - Realtime vehicle tracking system</title>
 
-    <title>Morbit - Realtime vehicle tracking system</title>
-
-    <!-- Bootstrap core CSS -->    
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
-
+<style>
+img {max-width:100%;}
+.scroll-icon {
+    position: relative;
+    bottom: 40px;
+   left: 45%;    
+}
+.carousel-inner {
+    height: auto;
+}
+.system-slider {
+    padding: 0 20px;
+    position: relative;
+}
+</style>
   </head>
 
   <body id="page-top">
@@ -28,7 +43,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Morbit</a>
+        <a class="navbar-brand js-scroll-trigger" style="font-family:kinescope;color:#5F9EA0;" href="#page-top" ><img src="img/veda.png" height="55" width="85" /></a>
+		<a id ="connectedId" class="navbar-brand js-scroll-trigger" style="font-family:kinescope;color:#5F9EA0;visibility:hidden" href="#page-top" ><img src="img/ConnectedIcon.png" height="25" width="35" /></a>
+		<a id ="disconnectedId" class="navbar-brand js-scroll-trigger" style="font-family:kinescope;color:#5F9EA0;visibility:hidden" href="#page-top" ><img src="img/DisconnectIcon.png" height="25" width="35" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -55,9 +72,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Morbit</h1>
-              <p class="intro-text">A real-time vehicle tracking system
-                <br>Power of IoT</p>
+  <!-- <div style="position: absolute; right: -45%; top: 269px;"><img alt="Motivity Labs" src="http://motivitylabs.com/wp-content/uploads/2016/10/motivitylabs_logo.png" /></div> -->
+              <h2 style="font-family:Georgia;">MOrbit says HELLO...</h2>
+			  <p class="intro-text"><h4 style="font-family:Georgia;">Enhance the level of your vehicle tracking system</h4><h5 style="font-family:Georgia;">Experience the Power of IoT</h5></p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
@@ -68,56 +85,131 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
+    <section id="about" style="height:100%;overflow:hidden;">
+      <div class="container" text-align="left" style="position:relative;top:100px;">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Morbit</h2>
-            <p>This is real time vehicle tracking system developed by Motivity Labs pvt ltd</p>
-          </div>
-        </div>
+          <div class="col-lg-7">
+  <div class="abt-lft-side">
+            <h2 style="font-family:Georgia;">Who are we</h2>
+            <h3 style="font-family:Georgia;">A Real time vehicle tracking system developed by Motivity Labs</h3>
+            <p style="text-align:justify;"> MOrbit is put forth by a team of enthusiasts working with a vision to improvise the tracking system in real time. Our main motto is to exaggerate the accuracy in locating and monitoring the movement of your vehicle and this could be best possible with a GPS based tracker. We emphasize in delivering satisfaction to our customers</p>
+<div class="view-content">
+             
+  <div class="checkmark-wrap ">
+  <span>We gave our best shot to equip you with</span>
+<ul>
+
+<li>Monitor Real time</li>
+<li>Alerts when device tampers</li>
+<li>History of vehicle movement*</li>
+<li>Geo-fencing*</li>
+<li>Speed Monitoring*</li>
+<li>Ease of usage</li>
+
+</ul>
+<p>*indicates in progress</p>
+</div>  
+    </div>
+</div>
+
+</div>
+<div class="col-lg-5">
+
+<!--<div class="desktop">-->
+
+<div class="system-slider">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/a1img.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/a2img.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/a3img.png" alt="Third slide">
+    </div>
+	 
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div> 
+
+<div>
+<div class="view-content">             
+  <div class="checkmark-wrap ">
+  <br></br><span><h4 style="font-family:Georgia;">MOrbit CREW</h4></span>
+<ul>
+<li>Gajender Singh Thakur </li>
+<li>Veda Praneetha Edala</li>
+<li>Hari Krishnan Nair Madathil</li>
+<li>Madhavi Maddela</li>
+<li>Naveen Gurram</li>
+</ul>
+</div>  
+    </div>
+</div>
+ </div>
+		  
+      </div>  
+
       </div>
+   	  <div class="scroll-icon">
+<a style="text-align:center; width-100%;" href="#track" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+</div>
     </section>
 
     <!-- Tracking Section -->
-    <section id="track" class="download-section content-section text-center">
+    <section id="track" class="download-section text-center" style="height:100%;overflow:hidden;">
       <div class="container">
-        <div class="col-lg-10 mx-auto">
-          <h2>Track vechicle on map</h2>
-          <p>Locate vehicle on Google map</a>			
+        <div class="col-lg-12 mx-auto">
+<div style="position:relative;top:70px;">
+          <h2>Here's your vehicle</h2> 
+<div id="map" ></div>
+  
+              <a href="#contact" class="btn btn-circle js-scroll-trigger">
+                  <i class="fa fa-angle-double-down animated"></i>
+              </a>
+          
+</div>
         </div>
-		<!-- Map Section -->
-		<div id="map"></div>
+<!-- Map Section -->
+
       </div>
+  
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
+    <section id="contact" class=" text-center" style="height:100%;overflow:hidden;">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-12 mx-auto">
+  <div style="position:relative;top:50px;">
             <h2>Contact Morbit team</h2>
+
+<p>Our vision and mission remains to be building up of expertise and resources to extend the technology continuum. Prioritization of right projects remain to be our forte while we take care of service transformation of your business which increases your market share.
+<br></br> We aspire to innovate and constantly nurture your dreams to transform the way that you connect to your customers. Our dedication remains towards your business and it’s upliftment through creating enabling technology solutions.
+<br></br>To know more about our company, click on the below link</p>
+<p><a href="http://motivitylabs.com/">Motivity Labs &raquo;</a></p>
             <p>Feel free to mail us to <a href="mailto:morbit@motivitylabs.com">morbit@motivitylabs.com</a></p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/morbit" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/morbit" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://plus.google.com/+morbit" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
-                </a>
-              </li>
-            </ul>
+<p><a href="http://motivitylabs.com" target="_blank"><img alt="Motivity Labs" src="img/motivitylabs_logo.png" /></a></p>
+</div>
           </div>
         </div>
       </div>
@@ -126,14 +218,14 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p>Copyright &copy; morbit 2018</p>
+        <p>Copyright &copy; Motivity Labs 2018</p>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>  
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -142,69 +234,70 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&callback=initMap"></script> -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&callback=initialize"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&callback=initMap"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&callback=initialize"></script>
 
     <!-- Browserify script -->
     <!-- <script src="js/browserMqtt.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.js"></script>
 
-	
-	<script>
-		// Create a client instance
-		client = new Paho.MQTT.Client("morbit.motivitylabs.com", Number(8083), "MorbitBrowserClient_" + Date.now());
+<script>
+// Create a client instance
+client = new Paho.MQTT.Client("morbit.motivitylabs.com", Number(8083), "MorbitBrowserClient_" + Date.now());
 
-		// set callback handlers
-		client.onConnectionLost = onConnectionLost;
-		client.onMessageArrived = onMessageArrived;
+// set callback handlers
+client.onConnectionLost = onConnectionLost;
+client.onMessageArrived = onMessageArrived;
 
-		// connect the client
-		client.connect({onSuccess:onConnect});
+// connect the client
+client.connect({onSuccess:onConnect});
 
 
-		// called when the client connects
-		function onConnect() {
-		  // Once a connection has been made, make a subscription and send a message.
-		  console.log("Connected to Server.");
-		  client.subscribe("MorbitMap");
-		  
-		  //message = new Paho.MQTT.Message("Just Connected !");
-		  //message.destinationName = "MorbitMap";
-		  
-		  //client.send(message);
-		}
+// called when the client connects
+function onConnect() {
+  // Once a connection has been made, make a subscription and send a message.
+  console.log("Connected to Server.");
+  client.subscribe("MorbitMap");
+  document.getElementById("connectedId").style.visibility = "visible";
+  document.getElementById("disconnectedId").style.visibility = "hidden";
+  //message = new Paho.MQTT.Message("Just Connected !");
+  //message.destinationName = "MorbitMap";
+  
+  //client.send(message);
+}
 
-		// called when the client loses its connection
-		function onConnectionLost(responseObject) {
-		  if (responseObject.errorCode !== 0) {
-			console.log("onConnectionLost: " + responseObject.errorMessage);
-		  }
-		}
+// called when the client loses its connection
+function onConnectionLost(responseObject) {
+  if (responseObject.errorCode !== 0) {
+console.log("onConnectionLost: " + responseObject.errorMessage);
+document.getElementById("connectedId").style.visibility = "hidden";
+document.getElementById("disconnectedId").style.visibility = "visible";
+  }
+}
 
-		// called when a message arrives
-		function onMessageArrived(message) {
-			try{			
-		  console.log("onMessageArrived: " + message.payloadString);
-		  
-		  //alert("Received: " + message.payloadString);
-		  
-		  var jo = JSON.parse(message.payloadString);
-		  if(jo) {
-			console.log(jo);
-			GoToPosition(jo.Lat, jo.Lng);
-		  }
-		  jo = null;
-		  }
-		  catch(e) {
-			console.log("Exception: " + e);
-		  }
-		}
-	</script>
-	
-	
+// called when a message arrives
+function onMessageArrived(message) {
+try{ 
+  console.log("onMessageArrived: " + message.payloadString);
+  
+  //alert("Received: " + message.payloadString);
+  
+  var jo = JSON.parse(message.payloadString);
+  if(jo) {
+console.log(jo);
+GoToPosition(jo.Lat, jo.Lng);
+  }
+  jo = null;
+  }
+  catch(e) {
+console.log("Exception: " + e);
+  }
+}
+</script>
   </body>
 
 </html>
+
